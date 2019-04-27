@@ -1,0 +1,6 @@
+<h3>Create a user</h3>
+<%= form_for @user, url: {action: :create}  do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.text_field :email, placeholder: "email" %>   
+  <%= form.submit %>
+<% end %>
